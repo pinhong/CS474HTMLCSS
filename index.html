@@ -1,4 +1,75 @@
 <html>
+	<!--Scale to fit mobile phone--> 
+	<link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	
+	<!--CSS-->
+	<style>
+	body {
+		background:#eee;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	
+	h2 {
+		font-size:40px;
+		font-weight:300;
+		font-family:"Brush Script MT", cursive, sans-serif;
+		color:#4169E1;
+	}
+	
+	.bio {
+		color:#87CEEB;
+		font-family:"Comic Sans MS", cursive, sans-serif;
+	}
+	
+	.button {
+		background:#DA70D6;
+		width:120px;
+		color:#FFA500;
+		height:25px;
+		-moz-border-radius: 20px;
+		webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;
+		text-align:center;
+	}
+
+	.box1 {
+		background:#90EE90;
+		width:240px;
+		color:#FF4500;
+		height:250px;
+		-moz-border-radius: 20px;
+		webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;
+		text-align:center;
+		float:left;
+	}
+	
+	.box2 {
+		background:#90EE90;
+		width:240px;
+		color:#FF4500;
+		height:250px;
+		-moz-border-radius: 20px;
+		webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;
+		text-align:center;
+		float:left;
+		margin-left:1px;
+	}
+	
+	
+	</style>
+	
+	
+	
+	<!--Main-->
 	<head>
 		<title>MyApp</title>
 	</head>
@@ -8,22 +79,31 @@
 	</style>
 	
 	<body>
-	<h2>Pinhong He</h2>
-		<div id='bio'>Student at Ursinus.</div>
+		<h2>Pinhong He</h2>
+		<div id='bio' class="bio">Senior Student at Ursinus College.</div>
 	 
 	 	<h3>Assignments</h3>
 		<ul id='assignments'>
-			<li>Go undercover</li>
-			<li>Learn HTML</li>
+			<li>Best & Worst Search Engines</li>
+			<li>Learn HTML/CSS</li>
 		</ul>
 	
 		<h3>A nice button</h3>
 
+		<button type="button" class="button">Do Not Try Me</button>
+		
 		<h3>An invisible seal</h3>
 
 		<h3>A video</h3>
-
-		<h3>Two boxes side by side</h3>
-
+		<video width="300" height="240" controls="controls">
+		<source src="gizmo.mp4" type="video/mp4"/>
+		</video>
+		
+		<h3>Image</h3>
+		<p><img width="50" class="opacity" src="seal.png" /></p>
+		
+		<h3>Two boxes: side, by side</h3>
+		<div class="box1" >#1: I am side</div>
+		<div class="box2" >#2: I am by side</div>
 	</body>
 </html>
